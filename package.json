@@ -1,0 +1,20 @@
+{
+  "name": "vprikol-api",
+  "version": "1.0.0",
+  "description": "veseliy prikol api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miroshhhhha/vprikol-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miroshhhhha/vprikol-api/issues"
+  },
+  "homepage": "https://github.com/miroshhhhha/vprikol-api#readme"
+}
