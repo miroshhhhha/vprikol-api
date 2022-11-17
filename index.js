@@ -1,5 +1,4 @@
 //author: miroshhhhha#6234
-//для работы необходим axios. Установка: npm i axios
 const axios = require('axios');
 class API{
     members = async (server, fraction_id, token) =>{   
@@ -59,6 +58,13 @@ class API{
     }
     checkrp = async (gender, nation, token) =>{
         await axios.get(`https://api.vprikol.dev/rpnick?gender=${gender}&nation=${nation}&token=${token}`).then(async response =>{
+            return response.data
+        }).catch(e => {
+            return e.response.data
+        })
+    }
+    ip = async (token, ip) =>{
+        await axios.get(`https://api.vprikol.dev/ip?token=${token}&ip=${ip}`).then(async response =>{
             return response.data
         }).catch(e => {
             return e.response.data
